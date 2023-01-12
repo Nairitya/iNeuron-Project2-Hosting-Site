@@ -19,6 +19,10 @@ body {
   color: #ffffff;
   font-family: "Poppins", sans-serif;
 }
+h2 {
+  font-size: 3em;
+  font-weight: 600;
+}
 /* GLOBAL CLASSES */
 
 .description-text {
@@ -32,12 +36,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 10%;
-  border: solid #0c8bfd;
-  background-color: #fff;
+  padding: 30px 6%;
+  background-color: var(--dark-gray);
   position: sticky;
   top: 0;
   width: 100%;
+  z-index: 999;
 }
 .nav-links {
   list-style: none;
@@ -61,7 +65,7 @@ button {
 /* HERO SECTION */
 .hero-section {
   display: flex;
-  padding: 20px 10%;
+  padding: 20px 6%;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -83,3 +87,59 @@ button {
 .hero-image {
   width: 100%;
 } */
+
+/* LOGO SECTION */
+
+.logo-section {
+  text-align: center;
+  background-color: var(--medium-gray);
+}
+.logo-section img {
+  margin: 40px 60px;
+}
+
+/*SERVICES SECTION*/
+
+.services-section {
+  background-color: #fff;
+  color: var(--dark-gray);
+  text-align: center;
+  padding: 100px 6%;
+}
+.services-section > p {
+  max-width: 450px;
+  margin: 20px auto 70px;
+}
+
+/*--Service CARDS*/
+.services-cards-container {
+  display: flex;
+  margin: 100px 0;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.service-card {
+  border: solid var(--light-gray) 2px;
+  max-width: 400px;
+  border-radius: 30px;
+  padding: 40px 30px;
+  margin: 0 auto;
+}
+
+.service-card-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 30px auto 20px;
+}
+
+.service-card.middle {
+  background-color: var(--dark-gray);
+  border: none;
+  transform: translateY(-50px);
+  box-shadow: 0 30px 50px rgba(128, 127, 127, 0.5);
+}
+.service-card.middle .service-card-title {
+  color: #fff;
+}
