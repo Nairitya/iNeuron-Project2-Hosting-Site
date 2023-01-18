@@ -143,3 +143,94 @@ button {
 .service-card.middle .service-card-title {
   color: #fff;
 }
+
+/*FEATURES*/
+.features-heading {
+  margin: 200px 0 100px;
+}
+.features-container {
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.features-left {
+  flex-grow: 1;
+  height: 100%;
+  flex: 1;
+  min-width: 60%;
+  height: 800px;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+}
+.feature-dropdowns {
+  border: 1px solid var(--dark-gray);
+  border-radius: 999px;
+  padding: 40px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+}
+.feature-dropdowns:nth-child(-n + 1) {
+  background-color: var(--primary-blue);
+  color: #fff;
+  border: 1px solid var(--primary-blue);
+}
+.feature-dropdowns > p {
+  display: inline-block;
+  font-size: 26px;
+}
+
+.features-right {
+  background-color: var(--dark-gray);
+  color: #fff;
+  height: 800px;
+  flex: 1;
+  padding: 30px 20px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+.list-item {
+  background-color: var(--medium-gray);
+  padding: 4% 20px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+.features-right .list-item::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  border-radius: 999px;
+  background-color: #fff;
+  margin-right: 10px;
+}
+
+/* PRICING SECTION  */
+.pricing-section {
+  background-color: var(--dark-gray);
+  text-align: center;
+}
+
+.pricing-section-heading,
+.left-arrow,
+.right-arrow {
+  display: inline-block;
+}
+.left-arrow,
+.right-arrow {
+  padding-top: 200px;
+}
+.pricing-plan {
+  background-color: #fff;
+}
