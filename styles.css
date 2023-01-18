@@ -220,6 +220,8 @@ button {
 .pricing-section {
   background-color: var(--dark-gray);
   text-align: center;
+  color: #fff;
+  padding: 20px 6%;
 }
 
 .pricing-section-heading,
@@ -231,6 +233,55 @@ button {
 .right-arrow {
   padding-top: 200px;
 }
+.pricing-container {
+  display: flex;
+  justify-content: space-between;
+}
 .pricing-plan {
+  max-width: 400px;
   background-color: #fff;
+  color: var(--dark-gray);
+  border-radius: 20px;
+  text-align: left;
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 700px;
+}
+.pricing-plan.blue {
+  background-color: var(--primary-blue);
+  color: #fff;
+}
+.pricing-name {
+  font-size: 2em;
+  font-weight: 600;
+}
+.large-price {
+  font-size: 3em;
+  font-weight: 600;
+}
+.small-price {
+  font-size: 0.5em;
+  color: var(--light-gray);
+}
+.pricing-features {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 20px 0;
+}
+.pricing-features > p {
+  font-size: 1.2em;
+}
+.tick-image {
+  margin-right: 20px;
+}
+.pricing-plan > button {
+  width: 100%;
+}
+
+.pricing-plan > button.white {
+  color: #fff;
 }
