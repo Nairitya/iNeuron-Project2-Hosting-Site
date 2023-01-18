@@ -243,11 +243,16 @@ button {
   color: var(--dark-gray);
   border-radius: 20px;
   text-align: left;
-  padding: 50px 30px;
+  padding: 40px 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 700px;
+}
+.pricing-plan > hr {
+  margin: 15px 0;
+  height: 2px;
+  opacity: 0.5;
 }
 .pricing-plan.blue {
   background-color: var(--primary-blue);
@@ -283,5 +288,9 @@ button {
 }
 
 .pricing-plan > button.white {
-  color: #fff;
+  color: var(--primary-blue);
+  background-color: #fff;
+}
+.small-price.blue {
+  color: rgba(255, 255, 255, 0.5);
 }
