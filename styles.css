@@ -405,13 +405,34 @@ input[type="submit"] {
 footer {
   padding: 0 6% 100px;
 }
+.footer-hr {
+  height: 2px;
+  opacity: 0.5;
+  background-color: #fff;
+}
 
 .footer-links-container {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin: 100px 0;
+}
+.footer-links-container > section h3 {
+  font-weight: normal;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+a {
+  text-decoration: none !important;
+  color: var(--light-gray);
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
 }
 .footer-links-container > section {
   display: flex;
   flex-direction: column;
+}
+footer .logo {
+  margin-top: 50px;
 }
